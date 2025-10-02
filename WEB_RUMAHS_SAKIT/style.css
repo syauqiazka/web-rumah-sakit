@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #333;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo h1 {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* HERO */
+.hero-section {
+    background-image: url("https://via.placeholder.com/1200x500");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.rounded-button {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.rounded-button:hover {
+    background-color: #67C090;
+}
+
+/* DOCTORS */
+.medicine-section {
+    padding: 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.medicine-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.medicine-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.2);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Wrapper gambar */
+.img-container {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Efek zoom hanya pada gambar */
+.medicine-item img,
+.testimony-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.medicine-item p {
+    padding: 0.5rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Hover effect */
+.medicine-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.medicine-item:hover img,
+.testimony-item:hover img {
+    transform: scale(1.1);
+}
+
+/* TESTIMONY */
+.testimony-section {
+    padding: 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimony-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimony-grid {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.testimony-item {
+    margin-top: 20px;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.testimony-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimony-item p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Hover effect */
+.testimony-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-left h3 {
+    margin: 0;
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.footer-grid h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-grid li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-grid a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-grid a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.footer-botom-reserved {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* DOCTORS SCROLL */
+.doctors-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;   /* biar rapi */
+  margin: auto;
+}
+
+.medicine-scroll {
+  display: flex;
+  transition: transform 0.6s ease; /* animasi tiap geser */
+}
+
+.medicine-item {
+  flex: 0 0 220px;
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.medicine-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.medicine-item p {
+  padding: 0.5rem;
+  margin: 0;
+  font-weight: bold;
+}
